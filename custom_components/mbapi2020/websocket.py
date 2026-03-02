@@ -448,7 +448,7 @@ class Websocket:
         self._LOGGER.debug("Connected to mercedes websocket at %s", websocket_url)
 
         # Always reset to initial timeout for each new connection (including reconnects)
-        self._connection_start_time = asyncio.get_event_loop().time()
+        self._connection_start_time = asyncio.get_running_loop().time()
         self._initial_timeout_used = True
         self._watchdog.timeout = INITIAL_WATCHDOG_TIMEOUT
 

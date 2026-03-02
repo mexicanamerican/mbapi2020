@@ -29,7 +29,6 @@ from custom_components.mbapi2020.errors import WebsocketError
 from custom_components.mbapi2020.helper import LogHelper as loghelper
 from custom_components.mbapi2020.services import setup_services
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import CONF_PASSWORD
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryError, ConfigEntryNotReady
 from homeassistant.helpers import device_registry as dr
